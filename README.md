@@ -27,3 +27,8 @@ This backend service is part of the multi-tenant Shopify Data Ingestion & Insigh
 ```bash
 git clone <backend-repo-link>
 cd backend
+````
+## Install dependencies
+```bash
+npm install
+```
