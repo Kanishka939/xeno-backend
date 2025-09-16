@@ -61,15 +61,15 @@ npm run dev
 - POST /webhooks/products – Ingest products
 
 ## Dashboard
--GET /dashboard/metrics – Total customers, orders, revenue
--GET /dashboard/orders-by-date – Orders filtered by date range
--GET /dashboard/top-customers – Top 5 customers by spend
+- GET /dashboard/metrics – Total customers, orders, revenue
+- GET /dashboard/orders-by-date – Orders filtered by date range
+- GET /dashboard/top-customers – Top 5 customers by spend
 ## Database Schema
--Tenant: id, name, email, api_key
--Customer: id, tenant_id, name, email, created_at
--Order: id, tenant_id, customer_id, total_amount, created_at
--Product: id, tenant_id, name, price, stock
--Event (optional): id, tenant_id, type, metadata, created_at
+- Tenant: id, name, email, api_key
+- Customer: id, tenant_id, name, email, created_at
+- Order: id, tenant_id, customer_id, total_amount, created_at
+- Product: id, tenant_id, name, price, stock
+- Event (optional): id, tenant_id, type, metadata, created_at
 
 ## High-Level Architecture
 ```bash
@@ -81,19 +81,20 @@ graph LR
     Scheduler --> Backend
 ```
 ## Assumptions & Limitations
--Shopify data sync currently supports only customers, orders, and products.
--Multi-tenancy is handled via tenant_id in all tables.
--No advanced caching or rate-limiting implemented yet.
+- Shopify data sync currently supports only customers, orders, and products.
+- Multi-tenancy is handled via tenant_id in all tables.
+- No advanced caching or rate-limiting implemented yet.
 
 ## Next Steps for Production
--Add robust error handling and logging.
--Implement Redis caching for faster analytics queries.
--Add rate-limiting and API security.
--Set up CI/CD for automatic deployments.
+- Add robust error handling and logging.
+- Implement Redis caching for faster analytics queries.
+- Add rate-limiting and API security.
+- Set up CI/CD for automatic deployments.
 
 ## References
--Shopify API Documentation
--Shopify App Template Remix
--Prisma ORM
+- Shopify API Documentation
+- Shopify App Template Remix
+- Prisma ORM
+
 
 
