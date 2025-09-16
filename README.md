@@ -51,14 +51,14 @@ npm run dev
 ```
 ## Optional: Configure cron jobs or Shopify webhooks to keep data in sync.
 ## API Endpoints
--Authentication
--POST /auth/register – Register a tenant
--POST /auth/login – Tenant login
+- Authentication
+- POST /auth/register – Register a tenant
+- POST /auth/login – Tenant login
 
 ## Data Ingestion
--POST /webhooks/customers – Ingest customers
--POST /webhooks/orders – Ingest orders
--POST /webhooks/products – Ingest products
+- POST /webhooks/customers – Ingest customers
+- POST /webhooks/orders – Ingest orders
+- POST /webhooks/products – Ingest products
 
 ## Dashboard
 -GET /dashboard/metrics – Total customers, orders, revenue
@@ -95,4 +95,5 @@ graph LR
 -Shopify API Documentation
 -Shopify App Template Remix
 -Prisma ORM
+
 
